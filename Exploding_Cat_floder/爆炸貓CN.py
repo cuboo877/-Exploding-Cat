@@ -330,7 +330,7 @@ def run(c, t):
     if c=="特殊連擊":
         pass
     else:
-        used_list.append(player_deck[t][player_deck[t].index(c)])
+        used_list.append(c)
         del player_deck[t][player_deck[t].index(c)]
 
 def special_combo(c,t):
