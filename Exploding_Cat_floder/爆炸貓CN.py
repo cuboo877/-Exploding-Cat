@@ -520,7 +520,7 @@ def gaming(turn):
                                         raise CheckNopeException
                                     else:
                                         input("\n\"可惡!\"")
-                                        used_list.append(player_deck[ask_want_to_draw - 1][Skip_index])                      
+                                        used_list.append(card)                      
                                 raise IndexError
                             elif ask_want_to_draw -1 == turn:
                                 input("\n輸入錯誤")
