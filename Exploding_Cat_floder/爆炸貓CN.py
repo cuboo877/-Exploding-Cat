@@ -625,6 +625,8 @@ while player_num != 1:
     gaming(turn)
     if card != "跳過卡" and card != "攻擊卡":
         final = draw(1)
+        if final == "Explode kitten":
+            final = "爆炸貓"
         print(f"\n玩家{turn+1}抽到的是 ",end="")
         color_print(final,"\n")
     else:

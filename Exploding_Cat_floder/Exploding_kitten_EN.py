@@ -446,7 +446,7 @@ def gaming(turn):
     while True:
         global card,turn_list
         try:
-            card_num = input(f"\nPlayer{turn+1}:I want")  #12345
+            card_num = input(f"\nPlayer{turn+1}:I want ")  #12345
             if card_num == "A" or card_num == "a":
                 if not len(deck)>0:
                     print("\nNo card")
@@ -617,7 +617,7 @@ while player_num != 1:
     gaming(turn)
     if card != "Skip" and card != "Attack":
         final = draw(1)
-        print(f"\nPlayer{turn+1}Got: ",end="")
+        print(f"\nPlayer{turn+1} Got: ",end="")
         color_print(final,"\n")
     else:
         final = ""
